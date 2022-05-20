@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let itemPrice1 = prompt(`Enter Price of Item 1`);
+            let itemPrice2 = prompt(`Enter Price of Item 2`);
+            let orderQty1 = prompt(`Enter Quantity of Item 1`);
+            let orderQty2 = prompt(`Enter Quantity of Item 2`);
+            let shippingCost = 100;
+            let calcOrder1 = itemPrice1*orderQty1;
+            let calcOrder2 = itemPrice2*orderQty2;
+
+            document.write(`
+            Price of Item 1 is ${itemPrice1}<br>
+            Quantity of Item 1 is ${orderQty1}<br>
+            Price of Item 2 is ${itemPrice2}<br>
+            Quantity of Item 2 is ${orderQty2}<br>
+            Shipping Charges is ${shippingCost}<br><br>
+
+            Total cost of your order is ${calcOrder1+calcOrder2+shippingCost}
+            `);
+        }
+
+    </script>
+</body>
+</html>
